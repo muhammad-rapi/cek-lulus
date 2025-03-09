@@ -43,7 +43,7 @@
             <p class="mt-3 text-dark">
                 Kamu <strong class="text-danger">belum lulus</strong> kali ini, tapi ini bukan akhir dari segalanya!
                 "Kegagalan adalah kesempatan untuk memulai lagi dengan lebih cerdas."
-                Tetap semangat dan terus berusaha, kesuksesan menantimu! 🔥
+                Tetap semangat dan terus berusaha, kesuksesan akan menantimu! 🔥
             </p>
         @endif
 

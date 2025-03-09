@@ -1,0 +1,32 @@
+name: Deploy Laravel to cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.CPANEL_HOST }}
+          username: ${{ secrets.CPANEL_USER }}
+          password: ${{ secrets.CPANEL_PASSWORD }}
+          script: |
+            cd ~/domains/ceklulus.bsebinjai.site/web-cek-kelulusan
+            git pull origin main
+            composer install --no-dev --optimize-autoloader
+            php artisan migrate --force
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+            php artisan storage:link
+            chmod -R 775 storage bootstrap/cache
+            chown -R bsebinja:bsebinja storage bootstrap/cache

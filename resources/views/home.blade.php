@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Kelulusan</title>
+    <title>Portal Kelulusan SMKN1 Binjaii</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
     <div class="container text-center">
-        <h1 class="mb-4">Selamat Datang di Portal Cek Kelulusan</h1>
+        <h1 class="mb-4">Selamat Datang di Portal Cek Kelulusan SMKN1 Binjai</h1>
         @if (session('error'))
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 {{ session('error') }}

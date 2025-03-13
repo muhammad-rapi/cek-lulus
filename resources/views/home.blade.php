@@ -11,7 +11,8 @@
 
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
     <div class="container text-center">
-        <h1 class="mb-4">Selamat Datang di Portal Cek Kelulusan SMKN1 Binjai</h1>
+        <h1 class="mb-1">Selamat Datang di Portal Cek Kelulusan</h1>
+        <h2 class="mb-4">SMKN 1 Binjai</h2>
         @if (session('error'))
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 {{ session('error') }}
@@ -31,9 +32,6 @@
         @endif
         <form action="{{ route('check.graduation') }}" method="POST" class="bg-white p-4 rounded shadow">
             @csrf
-            <div class="mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Masukkan Nama" required>
-            </div>
             <div class="mb-3">
                 <input type="text" name="nisn" class="form-control" placeholder="Masukkan NISN" required>
             </div>

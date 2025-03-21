@@ -37,19 +37,17 @@
             </p>
             <h3 class="text-dark">{{ $student->name }} ({{ $student->nisn }})</h3>
             <h4 class="text-dark">Tahun Pelajaran 2024/2025</h4>
-            <h4 class="text-dark">Dinyatakan</h4>
-            <h5 class="text-success">Lulus</h5>
+            <h5 class="text-dark">Dinyatakan</h5>
+            <h1 class="text-success">Lulus</h1>
         @else
             <h1 class="mb-3 text-danger">💪 Jangan Menyerah! 💪</h1>
             <p class="mt-3 text-dark">
                 Berdasarkan syarat dan ketentuan kelulusan, maka : 
             </p>
             <h3 class="text-dark">{{ $student->name }} ({{ $student->nisn }})</h3>
-            <p class="mt-3 text-dark">
-                Dinyatakan<strong class="text-danger"> tidak lulus</strong> kali ini, tapi ini bukan akhir dari segalanya!
-                "Kegagalan adalah kesempatan untuk memulai lagi dengan lebih cerdas."
-                Tetap semangat dan terus berusaha, kesuksesan akan menantimu! 🔥
-            </p>
+            <h4 class="text-dark">Tahun Pelajaran 2024/2025</h4>
+            <h5 class="text-dark">Dinyatakan</h5>
+            <h1 class="text-danger">Tidak Lulus</h1>
         @endif
 
         <div class="mt-4">

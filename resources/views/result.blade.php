@@ -37,10 +37,8 @@
             </p>
             <h3 class="text-dark">{{ $student->name }} ({{ $student->nisn }})</h3>
             <h4 class="text-dark">Tahun Pelajaran 2024/2025</h4>
-            <p class="mt-3">
-                Dinyatakan<strong class="text-success"> lulus</strong>! Selamat atas keberhasilanmu!
-                Masa depan cerah menantimu, teruslah berusaha! 
-            </p>
+            <h4 class="text-dark">Dinyatakan</h4>
+            <h5 class="text-success">Lulus</h5>
         @else
             <h1 class="mb-3 text-danger">💪 Jangan Menyerah! 💪</h1>
             <p class="mt-3 text-dark">

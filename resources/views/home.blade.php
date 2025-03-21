@@ -35,7 +35,7 @@
             <div class="mb-3">
                 <input type="text" name="nisn" class="form-control" placeholder="Masukkan NISN" required>
             </div>
-            <button type="submit" class="btn btn-primary">Cek lulus</button>
+            <button type="submit" class="btn btn-primary">Cek Kelulusan</button>
         </form>
     </div>
 </body>

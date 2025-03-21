@@ -32,16 +32,23 @@
 
         @if ($student->is_graduated)
             <h1 class="mb-3 text-primary">🎉 Selamat! 🎉</h1>
+            <p class="mt-3 text-dark">
+                Berdasarkan syarat dan ketentuan kelulusan, maka : 
+            </p>
             <h3 class="text-dark">{{ $student->name }} ({{ $student->nisn }})</h3>
+            <h4 class="text-dark">Tahun Pelajaran 2024/2025</h4>
             <p class="mt-3">
-                Kamu telah <strong class="text-success">dinyatakan lulus</strong>! Selamat atas keberhasilanmu!
-                Masa depan cerah menantimu, teruslah berusaha! 🚀
+                Dinyatakan<strong class="text-success"> lulus</strong>! Selamat atas keberhasilanmu!
+                Masa depan cerah menantimu, teruslah berusaha! 
             </p>
         @else
             <h1 class="mb-3 text-danger">💪 Jangan Menyerah! 💪</h1>
+            <p class="mt-3 text-dark">
+                Berdasarkan syarat dan ketentuan kelulusan, maka : 
+            </p>
             <h3 class="text-dark">{{ $student->name }} ({{ $student->nisn }})</h3>
             <p class="mt-3 text-dark">
-                Kamu <strong class="text-danger">belum lulus</strong> kali ini, tapi ini bukan akhir dari segalanya!
+                Dinyatakan<strong class="text-danger"> tidak lulus</strong> kali ini, tapi ini bukan akhir dari segalanya!
                 "Kegagalan adalah kesempatan untuk memulai lagi dengan lebih cerdas."
                 Tetap semangat dan terus berusaha, kesuksesan akan menantimu! 🔥
             </p>

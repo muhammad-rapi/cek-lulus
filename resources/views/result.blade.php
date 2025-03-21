@@ -51,7 +51,7 @@
         @endif
 
         <div class="mt-4">
-            @if ($student->file)
+            @if ($student->file && $student->is_graduated)
                 <a href="{{ Storage::url($student->file) }}" class="btn btn-primary btn-custom" download>
                     📄 Download SKL
                 </a>
